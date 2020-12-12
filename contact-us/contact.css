@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    animation-name: opac;
+    animation-duration: 0.5s;
+    scroll-padding-top: 46px;
+}
+.header-title{
+    font-weight: 600;
+    font-size: 0.86rem;
+    background: black;
+}
+.header-left{
+    color: red;
+}
+.header-left-items{
+    display: inline-block;
+}
+.header-left span {
+    color: rgb(179, 174, 174);
+}
+.header-right{
+    min-width: 142.91px     ;
+    text-align: right;
+}
+.header-right ul li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+}
+.header-right ul li a{
+    color: #777;
+}
+.header-right ul li a:hover{
+    color: red;
+}
+@media only screen and (max-width: 770px){
+    .header-right{
+        margin: 20px 0px 0px 20px;
+    }
+}
+@media only screen and (max-width: 550px){
+
+    .header-right{
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 390px){
+    .header-left{ min-width: 327.57px;
+    }
+}
+.fixer{
+    padding: 20px 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+@media only screen and (max-width: 320px){
+    .fixer{
+        padding: 0;
+    }
+}
+.nav-link:active,.nav-link:hover{
+    background: white;
+}
+.nav-search{
+    color: #777;
+}
+.nav-search:hover{
+    color: #777;
+}
+.nav-link{
+    font-weight: 550;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    padding: 15px!important;
+}
+.nav-link:hover{
+    color: red!important;
+}
+.dropdown-menu{
+    padding: 0;
+    background: rgb(39, 39, 39);
+    display: block;
+    opacity: 0;
+    width: 0px;
+    transition:  0.25s  ease 0.1s;
+    transition-duration: 0.15s ;
+}
+.dropdown-item{
+    font-family: sans-serif;
+    height: 36px;
+    color: rgb(185, 182, 182);
+    margin: 3px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 0;
+    transition:  0.25s  ease 0.2s;
+}
+.nav-item:hover .dropdown-menu{
+    margin-top: 20px;
+    opacity: 1;
+    width: 200px;
+}
+.nav-item:hover .dropdown-item{
+    font-size: 1.3rem;
+}
+.dropdown-item:hover{
+    background: rgb(114, 114, 114);
+}
