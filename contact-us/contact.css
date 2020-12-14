@@ -9,10 +9,12 @@ body{
     animation-duration: 0.5s;
     scroll-padding-top: 46px;
 }
+
 .header-title{
     font-weight: 600;
     font-size: 0.86rem;
     background: black;
+    padding: 10px 0;
 }
 .header-left{
     color: red;
@@ -56,6 +58,7 @@ body{
     }
 }
 .fixer{
+    max-height: 94px;
     padding: 20px 0;
     width: 100%;
     background: white;
