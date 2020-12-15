@@ -2,16 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 body{
     animation-name: opac;
     animation-duration: 0.5s;
     scroll-padding-top: 46px;
 }
+
 .header-title{
     font-weight: 600;
     font-size: 0.86rem;
     background: black;
+    padding: 10px 0;
 }
 .header-left{
     color: red;
@@ -55,6 +58,7 @@ body{
     }
 }
 .fixer{
+    max-height: 94px;
     padding: 20px 0;
     width: 100%;
     background: white;
@@ -115,4 +119,73 @@ body{
 }
 .dropdown-item:hover{
     background: rgb(114, 114, 114);
+}
+.contact-title{
+    color: white;
+    background: #d21919;
+    height: 160px;
+    font-family: sans-serif;
+}
+.info{
+    padding: 100px 0 ;
+}
+input{
+    width: 100%;
+    border:none;
+    line-height: 35px;
+}
+::placeholder{
+    color: #777;
+    font-size: 1.04rem;
+    font-family:sans-serif ;
+}
+input:focus{
+    outline: none;
+}
+hr{
+    margin-top: 0!important;
+}
+.footer{
+    background: #1f1f1f;
+    padding: 100px 0;
+}
+.footer-title{
+    font: 0.94rem sans-serif;
+    line-height: 25px;
+    color: #bbb
+}
+.footer-recent h2{
+    font: 1.3rem sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer-recent a{
+    font: 0.94rem sans-serif;
+    color: #bbb;
+    line-height: 29px;
+}
+.footer-recent a:hover{
+    text-decoration: none;
+    color: white;
+}
+.footer-contact h2{
+    font: 1.3rem sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer-contact p{
+    font: 0.94rem sans-serif;
+    color: #bbb;
+    line-height: 29px;
+}
+.footer-bottom {
+    background: black;
+    padding: 30px 0 ;
+    color: white;
+}
+.btn-info{
+    border: none;
+    background: red;
+    width: 80px;
+    height: 30px;
 }
