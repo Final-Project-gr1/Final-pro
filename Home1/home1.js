@@ -61,6 +61,7 @@ function drcActive(ques, drop, func1, func2) {
     data.scrollFadeIn();
   }
   scrollFade($(".template"));
+  scrollFade($(".multi-sec"));
 
 
 });

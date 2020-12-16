@@ -70,6 +70,9 @@ body{
         padding: 0;
     }
 }
+.navbar-nav{
+    background: white;
+}
 .nav-link:active,.nav-link:hover{
     background: white;
 }
