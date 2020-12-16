@@ -1,5 +1,7 @@
 var wdW = window.innerWidth;
 
+$(document).ready(function () {
+  
 function moveRight() {
   $(".move-item-l").animate({
     left: 250
@@ -42,7 +44,6 @@ function drcActive(ques, drop, func1, func2) {
   func1(ques, drop);
   func2(ques, drop);
 };
-$(document).ready(function () {
   moveRight();
   $("#cl-1").click(function () {
     returnLeft();
@@ -56,6 +57,10 @@ $(document).ready(function () {
   drcActive($("#q2"), $("#dr2"), dropClick, dropClickOut);
   drcActive($("#q3"), $("#dr3"), dropClick, dropClickOut);
   drcActive($("#q4"), $("#dr4"), dropClick, dropClickOut);
+  function scrollFade(data){
+    data.scrollFadeIn(300,430);
+  }
+  scrollFade($(".template"));
 
 });
 var fixer = document.querySelector('.fixer')
