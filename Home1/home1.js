@@ -57,12 +57,6 @@ function drcActive(ques, drop, func1, func2) {
   drcActive($("#q2"), $("#dr2"), dropClick, dropClickOut);
   drcActive($("#q3"), $("#dr3"), dropClick, dropClickOut);
   drcActive($("#q4"), $("#dr4"), dropClick, dropClickOut);
-  function scrollFade(data){
-    data.scrollFadeIn();
-  }
-  scrollFade($(".template"));
-
-
 
 });
 var fixer = document.querySelector('.fixer')
